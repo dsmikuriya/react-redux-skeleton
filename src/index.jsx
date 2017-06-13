@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import { HashRouter, Route } from 'react-router-dom'
 
 import createStore from './create-store'
-import HomeContainer from './containers/Home'
+import TopContainer from './containers/Top'
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = createStore()
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   return ReactDOM.render(
     <Provider store={ store }>
       <HashRouter>
-          <Route path='/' component={ HomeContainer } />
+          <Route path='/' component={ TopContainer } />
       </HashRouter>
     </Provider>,
     document.getElementById('app')
